@@ -1,0 +1,107 @@
+:root {
+  --primary-color: #f5f5f5; 
+  --secondary-color: #f4a261; 
+  --accent1-color: #264653; 
+  --accent2-color: #e9c46a; 
+  --heading-font: serif;
+  --body-font: sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    background-color: var(--accent1-color);
+    color: var(--primary-color);
+    margin: 100%;
+}
+
+body {
+    font-family: var(--body-font);
+    color: var(--accent1-color);
+}
+
+header, main, footer {
+    width: 840px;
+    margin: 0 auto;
+}
+
+h1, h2 {
+    font-family: var(--heading-font);
+    color: var(--primary-color);
+    background-color: var(--accent1-color);
+}
+
+nav, p, section, article {
+    margin: 16px;
+    padding: 8px;
+}
+
+.socialmedia a {
+    text-decoration: none;
+}
+
+.socialmedia img {
+    width: 30px;
+}
+
+.hero {
+    position: relative;
+}
+
+.hero img {
+    display: block;
+    /*margin: 100%;
+    height: auto;*/
+}
+
+h1 {
+    position: absolute;
+    top: 20px;
+    width: 100%;
+    padding: 16px;
+    text-align: center;
+    opacity: 0.7;
+    background-color: var(--accent1-color);
+    color: #fff;
+}
+
+.hero article {
+    position: absolute;
+    background-color: #264653;
+    padding: 3px;
+    margin: -120px 0;
+    color: #fff;
+}
+
+.hero article img {
+    float: right;
+    width: 125px;
+}
+
+/* Header navigation link styles */
+header nav {
+    display: flex;
+    gap: 12px;
+    align-items: center;
+}
+
+header nav a {
+    color: var(--primary-color); /* text color for nav links */
+    text-decoration: none;
+    font-weight: 600;
+    padding: 6px 8px;
+    border-radius: 4px;
+}
+
+header nav a:hover,
+header nav a:focus {
+    background-color: rgba(255,255,255,0.08);
+    color: #fff; /* stronger contrast on hover/focus */
+}
+
+
+
