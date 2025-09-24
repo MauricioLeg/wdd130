@@ -55,6 +55,8 @@ p {
 .grid {
     display: grid;
     align-items: center;
+    max-width: 840px;
+    margin: auto;
 }
 
     aside {
