@@ -16,7 +16,23 @@
 header {
     background-color: var(--accent1-color);
     color: var(--primary-color);
-    margin: 100%;
+    display: grid;
+    grid-template-columns: repeat(5, 25%);
+}
+
+.header nav {
+    width: 600px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+header, nav, a {
+    color: var(--primary-color); /* text color for nav links */
+    text-decoration: none;
+    font-weight: 600;
+    padding: 6px 8px;
+    border-radius: 4px;
 }
 
 body {
@@ -33,11 +49,64 @@ h1, h2 {
     font-family: var(--heading-font);
     color: var(--primary-color);
     background-color: var(--accent1-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-nav, p, section, article {
+nav, p, article {
     margin: 16px;
     padding: 8px;
+}
+
+footer {
+    display: grid;
+    grid-template-columns: 80% 20%;
+    align-items: center;
+}
+
+.history h2 {
+    display: grid;
+    grid-column: 1 / 4;
+    width: 840px;
+    margin-top: 10px;
+}
+
+.history {
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+    grid-template-rows: 10% 40%;
+}
+.history img {
+    width: 40%;
+    max-width: 250px;
+    height: auto;
+    display: block;
+    margin-top: 20px;
+}
+
+.adventure img {
+    width: 50px;
+    height: auto;
+    max-width: 100px;
+}
+.adventure {
+    display: grid;
+    grid-template-columns: repeat(6, 20%);
+    grid-template-rows: 20% 60%;
+}
+.adventure h2 {
+    display: grid;
+    grid-column: 1 / 7;
+    width: 840px;
+    height: auto;
+    padding-bottom: 15px;
+    margin: 0;
+}
+
+nav.socialmedia {
+   display: flex;
+   justify-content: space-between; 
 }
 
 .socialmedia a {
@@ -54,14 +123,16 @@ nav, p, section, article {
 
 .hero img {
     display: block;
-    /*margin: 100%;
-    height: auto;*/
+    margin-top: 10px;
+    width: 840px;
+    height: auto;
 }
 
 .hero h1 {
     position: absolute;
     top: 20px;
     width: 100%;
+    margin-left: 0;
     padding: 16px;
     text-align: center;
     opacity: 0.7;
@@ -73,6 +144,7 @@ nav, p, section, article {
     position: absolute;
     background-color: #264653;
     padding: 3px;
+    width: 100%;
     margin: -120px 0;
     color: #fff;
 }
@@ -81,27 +153,3 @@ nav, p, section, article {
     float: right;
     width: 125px;
 }
-
-/* Header navigation link styles */
-header nav {
-    display: flex;
-    gap: 12px;
-    align-items: center;
-}
-
-header nav a {
-    color: var(--primary-color); /* text color for nav links */
-    text-decoration: none;
-    font-weight: 600;
-    padding: 6px 8px;
-    border-radius: 4px;
-}
-
-header nav a:hover,
-header nav a:focus {
-    background-color: rgba(255,255,255,0.08);
-    color: #fff; /* stronger contrast on hover/focus */
-}
-
-
-
