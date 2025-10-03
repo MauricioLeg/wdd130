@@ -1,0 +1,102 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header,
+footer {
+    font-family: Tahoma;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    padding: 20px 0;
+    margin: 0 auto;
+}
+
+main {
+    background-color: bisque;
+    font-family: Arial;
+    border: 1px solid black;
+    display: flex;
+    width: 500px;
+    height: auto;
+    justify-content: center;
+    margin: 0 auto;
+    padding: 20px 0;
+    border-radius: 10px;
+}
+
+fieldset {
+    margin-top: 10px;
+}
+
+legend {
+    color: teal;
+    font-weight: bold;
+}
+
+.form-item {
+  display: grid;
+  align-items: center;
+  margin: 10px 0;
+}
+
+label {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.column2 {
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: 40px;
+    margin-right: 10px;
+    gap: 5px;
+}
+
+#fullname,
+#useremail {
+    padding: 5px;
+}
+
+.column1 {
+  grid-template-columns: 2fr 1fr;
+  grid-template-rows: 15px 15px 15px;
+  margin: 0.5rem 0;
+}
+
+#browser {
+    width: 125px;
+    margin-left: 5px;
+}
+
+input[type="checkbox"] {
+  width: 22px;
+  height: 22px;
+  vertical-align: bottom;
+  margin-left: 5px;
+}
+
+#feedlabel {
+    display: grid;
+    grid-column-end: span 2;
+    justify-content: center;
+}
+
+#feedback {
+    width: 400px;
+    margin-left: 6px;
+}
+
+
+button {
+    background-color: rgb(17, 17, 196);
+    color: white;
+    margin: 20px 150px 5px;
+    display: flex;
+    align-items: center;
+    padding: 8px 25px;
+    border-radius: 8px;
+    border: none;
+}
