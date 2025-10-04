@@ -47,11 +47,131 @@ header, main, footer {
 
 h1, h2 {
     font-family: var(--heading-font);
-    color: var(--primary-color);
-    background-color: var(--accent1-color);
+    color: var(--accent1-color);
+    margin: 20px 40px;
+    display: flex;
+    justify-content: center;
+}
+
+.company p{
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
+}
+
+iframe {
+    display: grid;
+    justify-content: flex-start;
+    width: 400px;
+    height: 400px;
+    grid-row: span 3;
+    
+}
+
+.userinfo {
+    display: grid;
+    grid-template-columns: 30% 70%;
+    grid-template-rows: repeat(2, 35px);
+    margin-bottom: 20px;
+
+}
+
+.userinfo label {
+    align-content: center;
+}
+
+#name,
+#useremail {
+    border-radius: 5px;
+    border: 1px solid;
+    margin: 2px 0;
+}
+
+.userpurpose {
+    display: grid;
+    grid-template-columns: 30% 20% 50%;
+    margin-bottom: 20px;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+legend {
+    display: grid;
+    grid-row-end: span 3;
+    align-items: center;
+}
+
+div .usermessage {
+    display: grid;
+    grid-template-columns: 5% 95%;
+    grid-template-rows: 30px 50px 30px 30px;
+    margin-bottom: -10px;
+}
+
+.usermessage label {
+    grid-column: span 3;
+    align-self: center;
+    justify-self: start;
+}
+
+#message {
+    grid-column-end: span 3;
+    border-radius: 5px;
+}
+
+input[type="checkbox"] {
+    width: 20px;
+    height: auto;
+    border-radius: 4px;
+    margin: 0;
+    display: grid;
+    justify-self: center;
+    align-self: center;
+}
+
+#messagelabel {
+    grid-column: 2;
+    align-self: center;
+    justify-self: flex-start;
+}
+
+form {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 100px 180px 180px;
+}
+
+button {
+    border-radius: 5px;
+    border: 1px solid #000;
+    grid-column-end: span 3;
+    grid-row: 4;
+}
+
+.employees {
+    border: 2.5px solid #000;
+    background-color: #999;
+    margin: 20px 0;
+    padding: 40px 0;
+    justify-items: center;
+    text-align: center;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 30% 90%;
+}
+
+#employee {
+    color: #111;
+    display: grid;
+    grid-column: span 4;
+    align-self: center;
+}
+
+.employees img {
+    width: 150px;
+    height: auto;
+    max-width: 200px;
 }
 
 nav, p, article {
@@ -60,6 +180,8 @@ nav, p, article {
 }
 
 footer {
+    background-color: var(--accent1-color);
+    color: #fff;
     display: grid;
     grid-template-columns: 80% 20%;
     align-items: center;
@@ -85,11 +207,13 @@ footer {
     margin-top: 20px;
 }
 
+
 .adventure img {
     width: 50px;
     height: auto;
     max-width: 100px;
 }
+
 .adventure {
     display: grid;
     grid-template-columns: repeat(6, 20%);
