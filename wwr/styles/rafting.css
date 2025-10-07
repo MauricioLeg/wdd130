@@ -156,7 +156,7 @@ button {
 
 .employees {
     border: 2.5px solid #000;
-    background-color: #999;
+    background-color: #c5c5c5;
     margin: 20px 0;
     padding: 40px 0;
     justify-items: center;
@@ -177,6 +177,10 @@ button {
     width: 150px;
     height: auto;
     max-width: 200px;
+}
+
+figcaption {
+    color: #000;
 }
 
 nav, p, article {
