@@ -199,6 +199,8 @@ nav.socialmedia {
         grid-row: 3;
         justify-self: center;
         align-self: center;
+        color: #fff;
+        text-decoration: none;
     }
     
     .home-purpose {
