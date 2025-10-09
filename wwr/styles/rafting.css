@@ -175,7 +175,7 @@ nav.socialmedia {
         margin: 10px 0;
         padding: 10px 10px;
     }
-    .homeform legend {
+    .homeform b {
         grid-column: 1 / 4;
         align-self: center;
         font-weight: bold;
