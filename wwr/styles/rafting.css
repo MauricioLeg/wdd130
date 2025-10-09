@@ -27,7 +27,15 @@ header {
     align-items: center;
 }
 
-header, nav, a {
+header, nav{
+    color: var(--primary-color); /* text color for nav links */
+    text-decoration: none;
+    font-weight: 600;
+    padding: 6px 8px;
+    border-radius: 4px;
+}
+
+nav a{
     color: var(--primary-color); /* text color for nav links */
     text-decoration: none;
     font-weight: 600;
@@ -53,136 +61,7 @@ h1, h2 {
     justify-content: center;
 }
 
-.company p{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-}
-
-iframe {
-    display: grid;
-    justify-content: flex-start;
-    width: 400px;
-    height: 400px;
-    grid-row: span 3;
-    
-}
-
-.userinfo {
-    display: grid;
-    grid-template-columns: 30% 70%;
-    grid-template-rows: repeat(2, 35px);
-    margin-bottom: 20px;
-
-}
-
-.userinfo label {
-    align-content: center;
-}
-
-#name,
-#useremail {
-    border-radius: 5px;
-    border: 1px solid;
-    margin: 2px 0;
-}
-
-.userpurpose {
-    border: none;
-    display: grid;
-    grid-template-columns: 40% 20% 50%;
-    grid-template-rows: repeat(3, 1fr);
-    gap: 8px;
-    justify-items: start;
-}
-.userpurpose legend {
-    display: block;
-    grid-column: 1;
-    align-items: center;
-    justify-content: center;
-    padding-right: 8px;
-}
-.userpurpose input[type="radio"] {
-    grid-column: 2;
-}
-
-div .usermessage {
-    display: grid;
-    grid-template-columns: 5% 95%;
-    grid-template-rows: 30px 50px 30px 30px;
-    margin-bottom: -10px;
-}
-
-.usermessage label {
-    grid-column: span 3;
-    align-self: center;
-    justify-self: start;
-}
-
-#message {
-    grid-column-end: span 3;
-    border-radius: 5px;
-}
-
-input[type="checkbox"] {
-    width: 20px;
-    height: auto;
-    border-radius: 4px;
-    margin: 0;
-    display: grid;
-    justify-self: center;
-    align-self: center;
-}
-
-#messagelabel {
-    grid-column: 2;
-    align-self: center;
-    justify-self: flex-start;
-}
-
-form {
-    display: grid;
-    grid-template-columns: 50% 50%;
-    grid-template-rows: 100px 180px 180px;
-}
-
-button {
-    border-radius: 5px;
-    border: 1px solid #000;
-    grid-column-end: span 3;
-    grid-row: 4;
-}
-
-.employees {
-    border: 2.5px solid #000;
-    background-color: #c5c5c5;
-    margin: 20px 0;
-    padding: 40px 0;
-    justify-items: center;
-    text-align: center;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: 30% 90%;
-}
-
-#employee {
-    color: #111;
-    display: grid;
-    grid-column: span 4;
-    align-self: center;
-}
-
-.employees img {
-    width: 150px;
-    height: auto;
-    max-width: 200px;
-}
-
-figcaption {
-    color: #000;
-}
-
+/* About us page style*/
 nav, p, article {
     margin: 16px;
     padding: 8px;
@@ -284,4 +163,271 @@ nav.socialmedia {
 .hero article img {
     float: right;
     width: 125px;
+}
+
+/* Home page style*/    
+    .homeform {
+        background-color: #264653;
+        color: #fff;
+        display: grid;
+        grid-template-rows: 40px 30px 30px;
+        grid-template-columns: 10% 40% 40%;
+        margin: 10px 0;
+        padding: 10px 10px;
+    }
+    .homeform legend {
+        grid-column: 1 / 4;
+        align-self: center;
+        font-weight: bold;
+        font-size: larger;
+    }
+    
+    .homeform label{
+        grid-column: 1;
+        align-self: center;
+    }
+    
+    .homeform p {
+        grid-column: 3;
+        grid-row: 2;
+        align-self: center;
+        justify-self: center;
+    }
+    
+    .homeform a {
+        grid-column: 3;
+        grid-row: 3;
+        justify-self: center;
+        align-self: center;
+    }
+    
+    .home-purpose {
+        display: grid;
+        grid-template-rows: 1fr 1fr;
+        grid-template-columns: 225px 1fr 1fr;
+        gap: 2px;
+    }
+    
+    .home-purpose img{
+        width: 200px;
+        height: auto;
+        grid-column: 1;
+    }
+    #home-purpose1 {
+        grid-column: 2;
+        grid-row: 1 / 3;
+        padding: 0;
+    }
+    #home-purpose2 {
+        grid-column: 3;
+        grid-row: 1 / 3;
+        padding: 0;
+    }
+
+/* Contact us page style */
+    .company p{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    
+    iframe {
+        display: grid;
+        justify-content: flex-start;
+        width: 400px;
+        height: 400px;
+        grid-row: span 3;
+        
+    }
+    
+    .userinfo {
+        display: grid;
+        grid-template-columns: 30% 70%;
+        grid-template-rows: repeat(2, 35px);
+        margin-bottom: 20px;
+    
+    }
+    
+    .userinfo label {
+        align-content: center;
+    }
+    
+    #name,
+    #useremail {
+        border-radius: 5px;
+        border: 1px solid;
+        margin: 2px 0;
+    }
+    
+    .userpurpose {
+        border: none;
+        display: grid;
+        grid-template-columns: 200px 50px 100px;
+        grid-template-rows: repeat(3, 40px);
+        gap: 8px;
+        justify-items: start;
+    }
+    .userpurpose input[type="radio"] {
+        grid-column: 2;
+    }
+    .userpurpose label {
+        grid-column: 3;
+    }
+    
+    div .usermessage {
+        display: grid;
+        grid-template-columns: 5% 95%;
+        grid-template-rows: 30px 50px 30px 30px;
+        margin-bottom: -10px;
+    }
+    
+    .usermessage label {
+        grid-column: span 3;
+        align-self: center;
+        justify-self: start;
+    }
+    
+    #message {
+        grid-column-end: span 3;
+        border-radius: 5px;
+    }
+    
+    input[type="checkbox"] {
+        width: 20px;
+        height: auto;
+        border-radius: 4px;
+        margin: 0;
+        display: grid;
+        justify-self: center;
+        align-self: center;
+    }
+    
+    #messagelabel {
+        grid-column: 2;
+        align-self: center;
+        justify-self: flex-start;
+    }
+    
+    form {
+        display: grid;
+        grid-template-columns: 50% 50%;
+        grid-template-rows: 100px 180px 180px;
+    }
+    
+    button {
+        border-radius: 5px;
+        border: 1px solid #000;
+        grid-column-end: span 3;
+        grid-row: 4;
+    }
+    
+    .employees {
+        border: 2.5px solid #000;
+        background-color: #c5c5c5;
+        margin: 20px 0;
+        padding: 40px 0;
+        justify-items: center;
+        text-align: center;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: 30% 90%;
+    }
+    
+    #employee {
+        color: #111;
+        display: grid;
+        grid-column: span 4;
+        align-self: center;
+    }
+    
+    .employees img {
+        width: 150px;
+        height: auto;
+        max-width: 200px;
+    }
+    
+    figcaption {
+        color: #000;
+    }
+
+/* Trips page style*/
+
+
+.trip-description {
+    display: grid;
+    grid-template-columns: 150px 1fr;
+}
+
+.trip-description img {
+    width: 150px;
+    height: auto;
+    margin-bottom: 2px;
+}
+
+.trip-description p {
+    display: flex;
+    margin: 0;
+}
+
+#ideal-trip {
+    font-weight: bold;
+    font-size: larger;
+    margin: 10px 0;
+    text-align: center;
+}
+
+.info-trips {
+    display: grid;
+    grid-template-columns: 675px 200px;
+    margin-left: -20px;
+}
+
+table {
+    border-collapse: collapse;
+    border: 2px solid rgb(140, 140, 140);
+    letter-spacing: 1px;
+    margin: 30px;
+    justify-self: center;
+}
+
+caption {
+    padding: 10px;
+    font-weight: bold;
+}
+
+thead {
+    background-color: rgb(160, 216, 216);
+}
+
+th,
+td {
+    border: 1px solid rgb(160, 160, 160);
+    padding: 15px 15px;
+}
+
+tbody > tr:nth-of-type(even) {
+    background-color: rgb(237, 238, 242);
+}
+
+.refcontact {
+    background-color: #264653;
+    color: #fff;
+    margin: 75px 20px 350px 0;
+    padding: 80px 10px;
+    justify-content: center;
+}
+
+.refcontact h3 {
+    text-align: center;
+    padding-top: 10px;
+    order: 2;
+}
+.refcontact a {
+    text-decoration: none;
+    color: #264653;
+    background-color: azure;
+    padding: 8px;
+    margin: 15px;
+    border-radius: 10px;
 }
