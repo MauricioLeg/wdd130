@@ -232,6 +232,13 @@ h3 {
         padding: 0;
     }
 
+    #homebutton {
+        width: 150px;
+        padding: 5px 0;
+        margin-left: 260px;
+        margin-top: 5px;
+    }
+
 /* Contact us page style */
     .company p{
         display: flex;
